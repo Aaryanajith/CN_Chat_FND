@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-const SOCKET_URL = 'ws://localhost:8000/ws'; // Will update to match your backend
+// Use secure WebSocket (wss) for HTTPS deployment
+const SOCKET_URL = 'wss://cnchatbnd-production.up.railway.app/ws';
 
 function Chat({ username }) {
   const [messages, setMessages] = useState([]);
